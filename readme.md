@@ -10,8 +10,10 @@
 1. Zoom blur
 
 ## Basic Usage
+1. [Demo](https://zoom-animation.netlify.com)
 1. Copy this link `https://zoom-animation.netlify.com/src/zoom.css`  
-1. ```
+
+```
 <div class="zoom zoom-basic">
     <img class="img-fluid rounded" src="your image"> 
 </div>
