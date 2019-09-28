@@ -1,0 +1,93 @@
+.zoom {
+    height: auto;
+    overflow: hidden;
+}
+/*   basic zoom   */
+.zoom-basic img {
+    transition: transform .5s ease;
+}
+.zoom-basic:hover img {
+    transform: scale(1.5);
+}
+    
+/*   quick zoom   */
+.zoom-quick img {
+    transform-origin: 0 0;
+    transition: transform .25s, visibility .25s ease-in;
+}
+.zoom-quick:hover img {
+    transform: scale(2);
+}
+    
+/*   point zoom   */
+.zoom-point img {
+    transform-origin: 65% 75%;
+    transition: transform 1s, filter .5s ease-out;
+}
+.zoom-point:hover img {
+    transform: scale(5);
+}
+/* zoom rotate  */
+.zoom-rotate img {
+    transition: transform .5s ease-in-out;
+}
+.zoom-rotate:hover img {
+    transform: scale(2) rotate(25deg);
+}
+/* zoom slow */
+.zoom-slow img {
+    transform-origin: 50% 65%;
+    transition: transform 5s, filter 3s ease-in-out;
+    filter: brightness(150%);
+}
+.zoom-slow:hover img {
+    filter: brightness(100%);
+    transform: scale(3);
+}
+    
+/* zoom slow */
+.zoom-brightness  img {
+    transform-origin: 50% 65%;
+    transition: transform 5s, filter 3s ease-in-out;
+}
+.zoom-brightness :hover img {
+    transform: scale(3);
+}
+/* zoom right */
+.zoom-right img {
+    transition: transform .5s ease-in-out;
+    transform: scale(1.4);
+    transform-origin: 100% 0;
+}
+.zoom-right:hover img {
+    transform: scale(1.5) translateX(30%);
+}
+/* zoom-in */
+.zoom-in img {
+    transition: transform .5s ease-in-out;
+    transform: scale(1.4);
+    transform-origin: 0 0;
+}
+.zoom-in:hover img {
+    transform: scale(1.25) translateY(-30%);
+}
+    
+/* blur */
+.zoom-blur img {
+    transition: transform 1s, filter 2s ease-in-out;
+    filter: blur(2px);
+    transform: scale(1.2);
+}
+.zoom-blur:hover img {
+    filter: blur(0);
+    transform: scale(1);
+}
+/* greyscale */
+.zoom-slow img {
+    transition: transform .5s, filter 1.5s ease-in-out;
+    filter: grayscale(100%);
+}
+.zoom-slow:hover img {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
