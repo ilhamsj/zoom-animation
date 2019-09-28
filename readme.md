@@ -13,6 +13,6 @@
 1. Copy this link `https://zoom-animation.netlify.com/src/zoom.css`  
 1. ```
 <div class="zoom zoom-basic">
-    <img class="img-fluid rounded" src="src/images/photo-1505699261378-c372af38134c.jpg"> 
+    <img class="img-fluid rounded" src="your image"> 
 </div>
 ```
