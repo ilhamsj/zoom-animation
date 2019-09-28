@@ -13,8 +13,18 @@
 1. [Demo](https://zoom-animation.netlify.com)
 1. Copy this link `https://zoom-animation.netlify.com/src/zoom.css`  
 
+## Basic Zoom
 ```
 <div class="zoom zoom-basic">
     <img class="img-fluid rounded" src="your image"> 
 </div>
 ```
+
+## Rotate Zoom
+```
+<div class="zoom zoom-rotate">
+    <img class="img-fluid rounded" src="your image"> 
+</div>
+```
+
+to be continue ...
