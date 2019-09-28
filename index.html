@@ -6,6 +6,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- FB -->
+    <meta property="og:url" content="https://zoom-animation.netlify.com/" />
+    <meta property="og:type" content="gallery" />
+    <meta property="og:title" content="Zoom Animation" />
+    <meta property="og:image" content="https://scontent.fjog3-1.fna.fbcdn.net/v/t1.0-9/66474928_2752675308094860_2131742154773495808_n.jpg?_nc_cat=103&_nc_eui2=AeHkEe0CIQyLXLaG6LpiYCSEU_rW6nhN8K2ALqOXIY1yhjxoBB_FiGf6u06cJIoVDm49vjVktDAaRxZA05cFpE3vRtXL19njNIvtl5eib2h0EA&_nc_oc=AQnr0Kl-cP6ZzbDvgUBOcgdD2WtoCMnYQ9-qPyE6C4y6HSUjgwnkFB9sTD8f6_geL-o&_nc_ht=scontent.fjog3-1.fna&oh=6eedd549dbf28c232ab0e76567f740e9&oe=5DFD8F9F" />
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="src/zoom.css">
@@ -60,8 +66,6 @@
             var x = $('.card:first-child').clone().removeClass('zoom-basic').addClass(data.mode[i]);
             $(x).appendTo('.card-columns');
             $(x).find('img').removeAttr('src').attr('src', data.image[i]);
-            console.log(data.image[i]);
-            
         }
     </script>
   </body>
