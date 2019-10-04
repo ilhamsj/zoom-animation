@@ -50,25 +50,13 @@
                 'zoom-in',
                 'zoom-blur',
             ],
-            image: [
-                'https://source.unsplash.com/random',
-                'https://source.unsplash.com/random',
-                'https://source.unsplash.com/random',
-                'https://source.unsplash.com/random',
-                'https://source.unsplash.com/random',
-                'https://source.unsplash.com/random',
-                'https://source.unsplash.com/random',
-            ],
         }
 
-        var x = $('.card:first-child').clone();
-        data.mode.forEach(item => {
-            // x.toggleClass(item, 'zoom-basic');
-            x.addClass(item);
-            x.appendTo('.card-columns');
-            console.log(item);
-            // $(x).find('img').removeAttr('src').attr('src', data.image[item]);
-        });
+
+        for (i = 0; i < data.mode.length; i++) {
+            var x = $('.card:first-child').clone().removeClass('zoom-basic').addClass(data.mode[i]);
+            $(x).appendTo('.card-columns');
+        }
 
 
     </script>
