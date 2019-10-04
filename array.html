@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array </title>
+</head>
+<body>
+    <ul id="content">
+        <li>conten</li>
+    </ul>
+    <script>
+        var data = {
+                title: [
+                    'title1',
+                    'title2',
+                    'title3',
+                    'title4',
+                ]
+        }
+
+        // // addTitleLast
+        // data.title.push('Hello world');
+        
+        // // removeTitleLast
+        // data.title.pop();
+        
+        // // addTitleFront
+        // data.title.unshift('Hello world');
+        
+        // // removeTitleFront
+        // data.title.shift();
+
+        // var getIndex = data.title.indexOf('title4');
+        // console.log(getIndex);
+
+        // removeTitlebyIndex
+        data.title.splice(0, 1)
+
+        // var content = document.getElementById('content');
+        // var item;
+
+        // looping
+        // for (let index = 0; index < data.title.length; index++) {
+        //     const item = data.title[index];
+        //     content.append(item)
+        //     console.log(item);
+        // }
+
+        data.title.map(function(item, index) {
+            console.log(item);
+        });
+        
+    </script>
+</body>
+</html>

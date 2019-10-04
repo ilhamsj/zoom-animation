@@ -10,7 +10,7 @@
     <meta property="og:url" content="https://zoom-animation.netlify.com/" />
     <meta property="og:type" content="gallery" />
     <meta property="og:title" content="Zoom Animation" />
-    <meta property="og:image" content="https://scontent.fjog3-1.fna.fbcdn.net/v/t1.0-9/66474928_2752675308094860_2131742154773495808_n.jpg?_nc_cat=103&_nc_eui2=AeHkEe0CIQyLXLaG6LpiYCSEU_rW6nhN8K2ALqOXIY1yhjxoBB_FiGf6u06cJIoVDm49vjVktDAaRxZA05cFpE3vRtXL19njNIvtl5eib2h0EA&_nc_oc=AQnr0Kl-cP6ZzbDvgUBOcgdD2WtoCMnYQ9-qPyE6C4y6HSUjgwnkFB9sTD8f6_geL-o&_nc_ht=scontent.fjog3-1.fna&oh=6eedd549dbf28c232ab0e76567f740e9&oe=5DFD8F9F" />
+    <!-- <meta property="og:image" content="https://scontent.fjog3-1.fna.fbcdn.net/v/t1.0-9/66474928_2752675308094860_2131742154773495808_n.jpg?_nc_cat=103&_nc_eui2=AeHkEe0CIQyLXLaG6LpiYCSEU_rW6nhN8K2ALqOXIY1yhjxoBB_FiGf6u06cJIoVDm49vjVktDAaRxZA05cFpE3vRtXL19njNIvtl5eib2h0EA&_nc_oc=AQnr0Kl-cP6ZzbDvgUBOcgdD2WtoCMnYQ9-qPyE6C4y6HSUjgwnkFB9sTD8f6_geL-o&_nc_ht=scontent.fjog3-1.fna&oh=6eedd549dbf28c232ab0e76567f740e9&oe=5DFD8F9F" /> -->
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -23,8 +23,8 @@
             <div class="card-columns">
                 <div class="card">
                     <div class="card-img-top">
-                        <div class="zoom zoom-basic">
-                            <img class="img-fluid rounded" src="src/images/photo-1505699261378-c372af38134c.jpg"> 
+                        <div class="zoom">
+                            <img class="img-fluid rounded" src="https://source.unsplash.com/random"> 
                         </div>
                     </div>
                 </div>
@@ -41,32 +41,36 @@
     <script>
         var data = {
             mode: [
-            'zoom-rotate',  
-            'zoom-quick', 
-            'zoom-point',
-            'zoom-slow',
-            'zoom-brightness',
-            'zoom-right',
-            'zoom-in',
-            'zoom-blur',
+                'zoom-rotate',  
+                'zoom-quick', 
+                'zoom-point',
+                'zoom-slow',
+                'zoom-brightness',
+                'zoom-right',
+                'zoom-in',
+                'zoom-blur',
             ],
             image: [
-                'https://scontent.fjog3-1.fna.fbcdn.net/v/t1.0-9/66474928_2752675308094860_2131742154773495808_n.jpg?_nc_cat=103&_nc_eui2=AeHkEe0CIQyLXLaG6LpiYCSEU_rW6nhN8K2ALqOXIY1yhjxoBB_FiGf6u06cJIoVDm49vjVktDAaRxZA05cFpE3vRtXL19njNIvtl5eib2h0EA&_nc_oc=AQnr0Kl-cP6ZzbDvgUBOcgdD2WtoCMnYQ9-qPyE6C4y6HSUjgwnkFB9sTD8f6_geL-o&_nc_ht=scontent.fjog3-1.fna&oh=6eedd549dbf28c232ab0e76567f740e9&oe=5DFD8F9F',
-                'https://scontent.fjog3-1.fna.fbcdn.net/v/t1.0-9/64520905_2752790508083340_7885339885626720256_n.jpg?_nc_cat=104&_nc_eui2=AeEhbu9JaJNSGdRMAamL5gsbtok0AOJo911K9hwm1YlwO2jymDtVdIgU9aeqZ48elFnsWPTh2bHX9oR28A9zwGNItXB86T384zi6RhgRIrtUeQ&_nc_oc=AQlP2M4WgoZBE-orGqXMraipcY_rhmGeEdGigNxuCdOn3UI7dJfy5KBnv8fEjuANE_A&_nc_ht=scontent.fjog3-1.fna&oh=a7167ac8675b562846e7b2daecb60aad&oe=5E3000D8',
-                'https://scontent.fjog3-1.fna.fbcdn.net/v/t1.0-9/66872782_2752675288094862_4832057272806932480_n.jpg?_nc_cat=105&_nc_eui2=AeEkTBiwfVkh0WDA5FVvxshAVFxMuzjFGvAiDz075AUdKoxYn9YXRkLyvo3ZwsFAgKvMJOI-zs4Qyky50vk5jThQnKx2WEK6YEmA6afzorsFqA&_nc_oc=AQlGnRR3N6hwcoxANfGjyP8wM7vBmYyp1ac2w81dZCJHwICmV5ZNnDLZmh1uzjYVIns&_nc_ht=scontent.fjog3-1.fna&oh=ad2b6fe59038c096b090a1d992104a2b&oe=5E38E571',
-                'https://scontent.fjog3-1.fna.fbcdn.net/v/t1.0-9/66465108_2752685071427217_7154049968938942464_n.jpg?_nc_cat=102&_nc_eui2=AeF8q7j6gowgWixQRZmdvc2j1Qspp3TYMom-sYgAGfpIRocT4Ss6hHQR_SdjPeOcTQFsS1Vq1Fa6TERUNLw45X5_vriZ1lbgQrID_OarjBVZWg&_nc_oc=AQlVXi6MEIgp3oV2xQj6U-VPNKaA63alf-FmZPLxIxjM_avpDR1FCVBxikb4-cQi92Y&_nc_ht=scontent.fjog3-1.fna&oh=fca67e0f6ce6238a4fbe1d08125b34bc&oe=5E2A11C2',
-                'https://scontent.fjog3-1.fna.fbcdn.net/v/t1.0-9/47341205_2376903802338681_2360927120131096576_n.jpg?_nc_cat=104&_nc_eui2=AeH8047SwaXDHWBx_NHcHisJ-JOXP1Z-Ox9f5kYSf7EYu1LN9-U1ws1TMPewPdsUZb0UxJduyP7E1Kz4g9IUyDtpcdqQuatTGUGcD7BIY6W0tQ&_nc_oc=AQkM9tXCifSc2O-tRjX0qRKPMKCpqX86G5DkANGa5V287OFXFr0Kwp0BBPByc5tHdBg&_nc_ht=scontent.fjog3-1.fna&oh=31afecee7c0a65cb2c013489f5bbe84c&oe=5DF61E43',
-                'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-                'https://images.pexels.com/photos/1493378/pexels-photo-1493378.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-                'https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-            ]
+                'https://source.unsplash.com/random',
+                'https://source.unsplash.com/random',
+                'https://source.unsplash.com/random',
+                'https://source.unsplash.com/random',
+                'https://source.unsplash.com/random',
+                'https://source.unsplash.com/random',
+                'https://source.unsplash.com/random',
+            ],
         }
 
-        for (i = 0; i < data.mode.length; i++) {
-            var x = $('.card:first-child').clone().removeClass('zoom-basic').addClass(data.mode[i]);
-            $(x).appendTo('.card-columns');
-            $(x).find('img').removeAttr('src').attr('src', data.image[i]);
-        }
+        var x = $('.card:first-child').clone();
+        data.mode.forEach(item => {
+            // x.toggleClass(item, 'zoom-basic');
+            x.addClass(item);
+            x.appendTo('.card-columns');
+            console.log(item);
+            // $(x).find('img').removeAttr('src').attr('src', data.image[item]);
+        });
+
+
     </script>
   </body>
 </html>
