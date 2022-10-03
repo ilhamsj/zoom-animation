@@ -91,3 +91,9 @@
     filter: grayscale(0);
     transform: scale(1.1);
 }
+
+/* Add class specifically */
+.zoom-slow:hover > img {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
